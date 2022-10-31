@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Encriptador Alura</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="imagenes/logotipo.svg">
-        <link rel="stylesheet" href="reset.css" media="screen" />
-        <link rel="stylesheet" href="styles.css" media="screen" />
-        <script defer src="script.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Juego Ahorcado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/state/logo.png">
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="reset.css" media="screen" />
+    <link rel="stylesheet" href="styles.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-        
-        
-        
+    <header><img class="logotipo" src="img/state/logo.png" alt="Logotipo Alura"></header>
+
+    <div class="juegoAhorcado">
+        <img id="muneco" alt="munecoAhorcado">
+    </div>
+    <div class="acertaste"></div>
+    <div class="error"></div>
+
+    <form class="botones" action="javascript:voind(0)">
+        <input class="juegoNuevo" type="button" onclick="juegoNuevo()" value="Juego Nuevo">
+        <input class="botonRendirse" type="button" onclick="rendirse()" value="Rendirse">
+    </form>
+
+    <footer> Juego del Ahorcado - Carlos Betancourt </footer>
+
 </body>
 </html>
